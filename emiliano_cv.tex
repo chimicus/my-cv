@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[8pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	LEGAL DISCLAIMER
+%----------------------------------------------------------------------------------------
+
+\rfoot{My personal details can be processed into your data system}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Emiliano}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Testa}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Cambridge}\\
+	\icon{Phone}{12}{+44 7512 468 305}\\
+	\icon{At}{12}{\href{mailto:testa.emiliano@gmail.com}{testa.emiliano@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+%	\icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+%	\icon{Github}{12}{\href{https://github.com/alyxvance}{github.com/alyxvance}}\\
+%	\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Objective \& Mindset}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	My personal attitude always drives me to new challenges.
+    Technical roles are my favorite but recently I've been involved in customer facing roles and I'm coming to like it.
+    My rule in life is "never say 'I'm not able to' but 'I have never tried before, I can give it a go'".
+    I am a very curious and collaborative person.
+    I never refuse a hand if asked politely and I step forward when I do a mistake.
+    I do raise my voice if I find that something can be improved and I do tell people if I feel they are doing a mistake.\\ % Dummy text
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{C}{90}
+		\baritem{Python}{80}
+		\baritem{Real-time}{80}
+		\baritem{Rust}{70}
+		\baritem{C++}{70}
+		\baritem{Assembly}{40}
+		\baritem{LaTeX}{40}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{6/git, 5/Linux, 4/Bare Metal, 6/vim}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2017 -- Present}
+		{Software engineer / Customer success manager}
+		{Undo ltd.}
+		{Covered several roles: from road map developer to customer support engineer to customer success manager\\ \texttt{Linux}\slashsep\texttt{C}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{git}}
+	\entry
+		{2012 -- 2017}
+		{Full stack developer}
+		{Cisco systems - was NDS}
+		{maintain, debug and develop several projects based on a middleware used to build a software system for TV broadcasters.\\ \texttt{C/C++}\slashsep\texttt{Python}\slashsep\texttt{Bash}\slashsep\texttt{git}\slashsep\texttt{Agile}\slashsep\texttt{scrum}}
+	\entry
+		{2006 -- 2012}
+		{Researcher}
+		{Politecnico di Torino (Polito)- Italy}
+		{I had to develop 3 different reasearch projects based on DSPs and all centered around mi-
+crowaves and their applications.
+\begin{itemize}
+\item Intrusion detection system based on radar technologies.
+\item Interception system for LCD and CRT involuntary emmissions (eavesdropping).
+\item Counter measure for the interception system developped at previous point.
+\end{itemize}
+\texttt{C/C++}\slashsep\texttt{DSPs}\slashsep\texttt{microwaves}\slashsep\texttt{analog and digital electronics}\slashsep\texttt{real-time algorithms}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2002 -- 2006}
+		{BSc Hons in Electronic Engineering}
+		{Politecnico di Torino}
+		{Bachelor in electronics that exposed me to both electronics and programming. My final mark was 91/110}
+	\entry
+		{1997 -- 2002}
+		{Classical school leaving certificate}
+		{Convitto Nazionale Umberto I}
+		{Latin \& ancient greek, Mathematics, Physics, History}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Italian} - native\\
+	\textbf{English} - proficient\\
+	\textbf{French} - rudimentary
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	I love drones and automatic control software, kick-boxing, reading, listening to music, animals and bird watching
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Referees}
+\begin{entrylist}
+\entry {Undo} {Bruce Bye} {Manager} {bbye@undo.io}
+\entry {Cisco} {Edd Beale} {Manager} {ebeale@cisco.com}
+\entry {Cisco} {Richard Tinner} {Manager} {rtinner@cisco.com}
+\entry {Polito} {Riccardo Maggiora} {Professor} {riccardo.maggiora@polito.it}
+\end{entrylist}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
